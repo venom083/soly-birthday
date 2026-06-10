@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm --filter @workspace/birthday-site run build:netlify"
+  command = "pnpm run build:site"
   publish = "artifacts/birthday-site/dist"
 
 [build.environment]
