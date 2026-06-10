@@ -1,0 +1,8 @@
+[build]
+  command = "pnpm install && pnpm --filter @workspace/birthday-site run build:netlify"
+  publish = "artifacts/birthday-site/dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

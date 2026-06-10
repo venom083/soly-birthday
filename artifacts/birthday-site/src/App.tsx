@@ -118,7 +118,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-rose-50/30 text-rose-950 relative selection:bg-rose-200 selection:text-rose-900">
-      <audio ref={audioRef} src="/assets/nasheed2.mp3" loop />
+      <audio ref={audioRef} src="/assets/nsheed.mp3" loop />
       <div className="fixed top-4 right-4 z-50">
         <Button variant="outline" size="icon" onClick={toggleMute} className="rounded-full bg-white/50 backdrop-blur border-rose-200 text-rose-600 hover:bg-rose-100" data-testid="button-mute">
           {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
