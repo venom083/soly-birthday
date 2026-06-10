@@ -1,6 +1,10 @@
 [build]
-  command = "pnpm install && pnpm --filter @workspace/birthday-site run build:netlify"
+  command = "pnpm --filter @workspace/birthday-site run build:netlify"
   publish = "artifacts/birthday-site/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  PNPM_VERSION = "9"
 
 [[redirects]]
   from = "/*"
