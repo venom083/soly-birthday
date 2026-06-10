@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>اشراقة قمر جديدة</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+
+</head>
+<body>
+
+  <div id="passwordScreen">
+    <div class="login-box">
+      <h2>أدخل كلمة السر</h2>
+      <input type="password" id="passwordInput" placeholder="كلمة السر">
+      <button onclick="checkPassword()">دخول</button>
+    </div>
+  </div>
+
+  <div id="mainContent" class="hidden">
+    <section id="home">
+      <div class="flower-bg"></div>
+      <div class="home-content fade-in">
+        <h1>  🌷 أأهديكِ زهرًا وأنتِ العبير،الذي كان بكِ كم وقتي يطيب   </h1>
+        <button id="startBtn">ابدأ</button>
+      </div>
+    </section>
+
+    <section id="calendar" class="hidden">
+  <h2>التقويم</h2>
+  <p class="calendar-message">🌸 شكراً لمشاركتي أفضل لحظات حياتي، هذه هدية بسيطة أقدمها لكِ 💝 وأرجو وأدعو الله أن تكوني سكنًا لي 🤍</p>
+  <div id="cardsContainer"></div>
+</section>
+
+    <div id="pdfModal" class="modal hidden" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-content">
+        <button id="closeModal" aria-label="إغلاق">×</button>
+        <iframe id="pdfFrame" title="عرض الهدية" frameborder="0"></iframe>
+        <a id="downloadPdfBtn" href="#" download>تحميل الهدية</a>
+      </div>
+    </div>
+  </div>
+
+<audio id="bgMusic" autoplay>
+  <source src="assets/nasheed2.mp3" type="audio/mpeg">
+</audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

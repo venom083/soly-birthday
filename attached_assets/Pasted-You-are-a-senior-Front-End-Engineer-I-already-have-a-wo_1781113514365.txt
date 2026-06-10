@@ -1,0 +1,118 @@
+You are a senior Front-End Engineer.
+
+I already have a working website project built ONLY with:
+
+* HTML
+* CSS
+* Vanilla JavaScript
+
+IMPORTANT RULES:
+
+1. Do NOT create a new project.
+2. Do NOT replace the existing project structure.
+3. Do NOT add any frameworks.
+4. Do NOT add any libraries.
+5. Do NOT use React, Vue, Angular, Bootstrap, Tailwind, jQuery, Node packages, CDN libraries, or external dependencies.
+6. Only modify the existing HTML, CSS, and JavaScript files.
+7. Reuse the current codebase as much as possible.
+8. Keep the current password system and improve it if necessary without breaking it.
+9. All code must be clean, optimized, responsive, and production-ready.
+10. Before finishing, test all functionality and verify there are no JavaScript errors, broken links, layout issues, or console errors.
+
+PROJECT IDEA:
+This is a birthday website containing 8 messages that are unlocked over 8 days starting from the birthday date.
+
+NEW FEATURES TO ADD:
+
+1. Previous Birthday Section
+   Create a beautiful section dedicated to the previous birthday memories.
+   This section should:
+
+* Match the site's existing design.
+* Support text, images, and memories.
+* Include smooth animations.
+* Be fully responsive.
+
+2. Upcoming Birthday Section
+   Create another section dedicated to the next birthday.
+
+Birthday date:
+24/07
+
+This section should:
+
+* Display a live countdown timer.
+* Show days, hours, minutes, and seconds remaining.
+* Automatically update every second.
+* Use the user's local time.
+* Be visually attractive and mobile-friendly.
+
+3. Improved Password Experience
+   Keep the current password concept.
+   Improve the UI/UX without changing the core logic.
+   Add:
+
+* Better error messages.
+* Better success animations.
+* Smooth transitions.
+* Input validation.
+
+4. Eight-Day Message Experience
+   Enhance the existing 8-message system:
+
+* Preserve the original idea.
+* Improve visuals.
+* Add progress indicators.
+* Show which day is unlocked.
+* Prevent access to future messages before their unlock date.
+* Display friendly lock messages for locked days.
+
+5. Animations
+   Using only CSS and JavaScript:
+
+* Smooth fade-ins.
+* Slide animations.
+* Hover effects.
+* Elegant transitions.
+* No external animation libraries.
+
+6. Mobile Optimization
+   Ensure:
+
+* Perfect appearance on phones.
+* Perfect appearance on tablets.
+* Perfect appearance on desktop devices.
+* No overflow issues.
+* No broken layouts.
+
+7. Performance
+   Optimize:
+
+* CSS structure.
+* JavaScript logic.
+* Loading performance.
+* Responsive behavior.
+
+8. Final Verification
+   Before completing:
+
+* Check every HTML file.
+* Check every CSS file.
+* Check every JavaScript file.
+* Fix all detected errors.
+* Verify all buttons work.
+* Verify all timers work.
+* Verify all password functionality works.
+* Verify all message unlocking functionality works.
+* Verify responsive design works.
+
+FINAL OUTPUT REQUIREMENTS:
+
+* Modify the existing files only.
+* Do not create unnecessary files.
+* Provide the complete updated code.
+* Ensure the project can be downloaded and run immediately by opening index.html.
+* No build step.
+* No package installation.
+* No dependencies.
+* Pure HTML, CSS, and Vanilla JavaScript only.

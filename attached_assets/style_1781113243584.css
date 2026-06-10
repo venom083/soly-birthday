@@ -1,0 +1,240 @@
+/* استايل الصفحة */
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  background: linear-gradient(135deg, #fff0f5, #f8e8ff);
+  color: #4a2c2a;
+}
+
+/* شاشة كلمة المرور */
+#passwordScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffe4ec;
+}
+.login-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(242, 138, 178, 0.3);
+  text-align: center;
+}
+.login-box input {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 80%;
+}
+.login-box button {
+  background-color: #f28ab2;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.login-box button:hover {
+  background-color: #d66794;
+}
+
+/* خلفية زهرية شفافة */
+.flower-bg {
+  background-image: url('https://www.transparenttextures.com/patterns/flowers.png');
+  opacity: 0.08;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  background-size: cover;
+}
+
+.calendar-message {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 10px 0 20px;
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+  line-height: 1.6;
+}
+
+#home {
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(242, 138, 178, 0.2);
+}
+
+h1, h2 {
+  color: #b25d91;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  line-height: 1.6;
+  background: linear-gradient(to left, #e49cc5, #c996d3, #f4a6b5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button, a {
+  font-size: 1.1em;
+  padding: 10px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #f28ab2;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(242, 138, 178, 0.3);
+}
+
+button:hover, a:hover {
+  background: #d66794;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#calendar {
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+}
+
+#cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #ffffff;
+  border: 2px solid #f28ab2;
+  border-radius: 16px;
+  width: 140px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(242, 138, 178, 0.1);
+  color: #b25d91;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #fff4f9;
+}
+
+.card.locked {
+  background: #f3e8ee;
+  color: #a8a8a8;
+  border-style: dashed;
+  cursor: not-allowed;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px 18px;
+  width: 90vw;
+  max-width: 520px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#closeModal {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e57373;
+  color: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#closeModal:hover {
+  background: #c0392b;
+}
+
+#pdfFrame {
+  width: 100%;
+  height: 350px;
+  border: none;
+  margin-bottom: 16px;
+}
+
+/* أنميشن ناعم */
+.fade-in {
+  animation: fadeInUp 2s ease-out forwards;
+  opacity: 0;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* استجابة للجوال */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 96vw;
+    padding: 10px 4px;
+  }
+  #pdfFrame {
+    height: 220px;
+  }
+  .card {
+    width: 90px;
+    height: 60px;
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+}
