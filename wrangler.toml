@@ -1,12 +1,5 @@
-[build]
-  command = "pnpm run build:site"
-  publish = "artifacts/birthday-site/dist"
+name = "soly-birthday"
+compatibility_date = "2026-06-11"
 
-[build.environment]
-  NODE_VERSION = "20"
-  PNPM_VERSION = "9"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[assets]
+directory = "artifacts/birthday-site/dist"
