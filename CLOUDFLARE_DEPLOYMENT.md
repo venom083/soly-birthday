@@ -36,8 +36,9 @@ npm install -g wrangler
 # Login to Cloudflare
 wrangler login
 
-# Deploy
-wrangler pages deploy artifacts/birthday-site/dist
+# Deploy from the site folder
+cd artifacts/birthday-site
+wrangler pages deploy dist --project-name soly-birthday
 ```
 
 ### 3. Custom Domain Setup (Optional)
