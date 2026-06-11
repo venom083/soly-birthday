@@ -41,6 +41,11 @@ cd artifacts/birthday-site
 wrangler pages deploy dist --project-name soly-birthday
 ```
 
+#### Recommended pnpm workspace command
+```bash
+pnpm --dir artifacts/birthday-site exec wrangler pages deploy dist --project-name soly-birthday
+```
+
 ### 3. Custom Domain Setup (Optional)
 1. In Cloudflare Pages project settings
 2. Go to "Custom domains"
