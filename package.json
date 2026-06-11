@@ -5,7 +5,8 @@
   "scripts": {
     "preinstall": "node -e \"const fs=require('fs');['package-lock.json','yarn.lock'].forEach(f=>{try{fs.unlinkSync(f)}catch(_){}});const ua=process.env.npm_config_user_agent||'';if(ua&&!ua.startsWith('pnpm')){process.stderr.write('Error: Use pnpm instead\\n');process.exit(1)}\"",
     "build": "pnpm run typecheck && pnpm -r --if-present run build",
-    "build:site": "pnpm --filter @workspace/birthday-site run build:netlify",
+    "build:site": "pnpm --filter @workspace/birthday-site run build",
+    "build:netlify": "pnpm --filter @workspace/birthday-site run build:netlify",
     "build:cloudflare": "pnpm run build:site",
     "deploy:cloudflare": "pnpm --dir artifacts/birthday-site run deploy",
     "typecheck:libs": "tsc --build",

@@ -23,7 +23,7 @@ The project is already configured! Key files created:
 5. Configure build settings:
    - **Framework**: None (custom)
    - **Build command**: `pnpm install && pnpm run build:site`
-   - **Build output directory**: `artifacts/birthday-site/dist`
+   - **Build output directory**: `artifacts/birthday-site/dist/public`
    - **Root directory**: `/`
 6. Click "Save and Deploy"
 7. Cloudflare will automatically deploy on every push to `main`
@@ -38,12 +38,12 @@ wrangler login
 
 # Deploy from the site folder
 cd artifacts/birthday-site
-wrangler pages deploy dist --project-name soly-birthday
+wrangler pages deploy dist/public --project-name soly-birthday
 ```
 
 #### Recommended pnpm workspace command
 ```bash
-pnpm --dir artifacts/birthday-site exec wrangler pages deploy dist --project-name soly-birthday
+pnpm --dir artifacts/birthday-site exec wrangler pages deploy dist/public --project-name soly-birthday
 ```
 
 ### 3. Custom Domain Setup (Optional)
