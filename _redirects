@@ -1,0 +1,3 @@
+# Cloudflare Pages redirect rules for SPA routing
+# All requests to non-existent files/folders are redirected to index.html
+/* /index.html 200

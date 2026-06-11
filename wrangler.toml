@@ -1,0 +1,23 @@
+# Cloudflare Pages Configuration
+name = "soly-birthday"
+type = "javascript"
+account_id = ""  # Add your Cloudflare Account ID here
+workers_dev = true
+
+# Build configuration
+[build]
+command = "pnpm install && pnpm run build:site"
+cwd = "./"
+watch_paths = ["artifacts/birthday-site/src/**/*.{ts,tsx}"]
+
+# Deployment configuration
+[env.production]
+routes = [
+  { pattern = "soly-birthday.pages.dev", zone_name = "soly-birthday.pages.dev" }
+]
+
+# Performance and caching
+[rules]
+type = "CompiledContentType"
+globs = ["**/*.woff2", "**/*.woff", "**/*.ttf"]
+fallthrough = true
